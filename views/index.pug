@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Game</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <section id="navbar">
+        <div id="navlogo" onmouseenter="navopen()"></div>
+        <nav id="nav" onmouseleave="navclose()">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Game" target="_blank" >Game</a></li>
+                <li onclick="rule_open()">Rule</li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="content">
+        <span id="photo"></span>
+        <div id="main_content">
+            <div id="rules">
+                <ul>
+                    <li class="rule_text"> Flip two cards/blocks on each turn.</li>
+                    <li class="rule_text"> Players take turns.</li>
+                    <li class="rule_text"> If the pictures match, keep the pair and score a point.</li>
+                    <li class="rule_text">If the pictures don't match, flip them back face-down.</li>
+                    <li class="rule_text">Continue until all pairs are matched.</li>
+                    <li class="rule_text"> The player with the most points wins.</li>
+                </ul>
+    
+            </div>
+            <div id="gamename"> Block Game</div>
+            <button id="rulebutton" onclick="rule_open()">Rule</button>
+            <button id="togame"><a href="/game" id="start">Start</a></button>
+        </div>
+    </section>
+
+    script
+     include ../static/index.js
+</body>
+
+</html>
