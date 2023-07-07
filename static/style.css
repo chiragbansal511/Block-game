@@ -1,0 +1,364 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ 
+@font-face {
+    font-family: myfont ;
+    src: url("../static/advetime.ttf");
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://media-private.canva.com/BDTcE/MAED_jBDTcE/1/s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20230701%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230701T231456Z&X-Amz-Expires=49524&X-Amz-Signature=a99a26e3633b0669e9b8938a35baee57ff900cf8e21fb3522793c9ea349c9e91&X-Amz-SignedHeaders=host&response-expires=Sun%2C%2002%20Jul%202023%2013%3A00%3A20%20GMT");
+    background-size: cover;
+    z-index: -1;
+    filter: blur(8px);
+    opacity: .8;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    }
+    
+    
+#navbar{
+    height: 90vh;
+    /* background: aqua; */
+    width: 17vw;
+    position: absolute;
+    left: 3vw;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    
+#navlogo{
+    width: 17vw;
+    height: 10vh;
+    background-image: url("https://media-public.canva.com/GC3yw/MAE1r-GC3yw/1/tl.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2px;
+    }
+    
+    
+nav{
+    width: 17vw;
+    height: 90vh;
+    background-color: #0ba4d0;
+    box-shadow: 8px 7px #32536e;
+     visibility: hidden;
+}
+
+
+li{
+    list-style-type: none;
+    height: 7vh;
+    width: 17vw;
+    background-color: #f64a0b;
+    background-image: linear-gradient(#f64a0b ,rgb(255, 99, 46) ,#f64a0b);
+    box-shadow: 6px 7px #413b39;
+    margin-bottom: 6.5px;
+    margin-top: 9.5px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+}
+
+
+li:hover , #navlogo:hover{
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+
+
+#content::before{
+    content: "";
+    position: absolute;
+    height: 90vh;
+    width: 94vw;
+    z-index: -1;
+    background-image: url("https://media-private.canva.com/BDTcE/MAED_jBDTcE/1/s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20230701%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230701T231456Z&X-Amz-Expires=49524&X-Amz-Signature=a99a26e3633b0669e9b8938a35baee57ff900cf8e21fb3522793c9ea349c9e91&X-Amz-SignedHeaders=host&response-expires=Sun%2C%2002%20Jul%202023%2013%3A00%3A20%20GMT");
+    background-size: cover;
+    opacity: .7;
+    }
+    
+    
+#content{
+    height: 90vh;
+    width: 94vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    }
+    
+    
+#photo{
+    height: 20vh;
+    width: 25vw;
+    background-image: url("https://media-public.canva.com/fZ1Jw/MAFUhcfZ1Jw/1/s.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+    }
+    
+     
+ #main_content::before{
+    content: "";
+    position: absolute;
+    height: 60vh;
+    width: 25vw; 
+    background-image: url("https://media-public.canva.com/LabEw/MAB7OBLabEw/2/tl.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: .5;
+    z-index: 1;
+ } 
+
+ 
+#main_content::after{
+    content: "";
+    position: absolute;
+    height: 60vh;
+    width: 25vw;    
+    background-image: url("https://media-public.canva.com/eIEGE/MAEoZveIEGE/1/tl.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 4;
+    transform: rotate(180deg);
+    background-position: bottom;
+    
+}
+
+#main_content{
+    height: 60vh;
+    width: 25vw;
+    background-color: #FF914D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+    border-top-right-radius: 2vh;
+    z-index: 1;
+}
+
+#gamename{
+ height: 15vh;
+ width: 25vw;
+ /* background-color: cadetblue;   */
+ font-size: 5rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: myfont;
+color: white;
+z-index: 2;
+}
+
+#rulebutton{
+    height: 10vh;
+    width: 15vw;
+    background: #ffe400;
+    border: 5px solid black;
+    border-radius: 22vh;
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 4px 5px #cab500;
+    z-index: 5;
+    text-align: center;
+}
+
+#rulebutton:hover, #togame:hover{
+cursor: pointer;
+}
+
+#togame{
+    height: 10vh;
+    width: 15vw;
+    border: 5px solid black;
+    background-color: #FBE983;
+    box-shadow: 1px 10px #FBE983;
+    border-radius: 20vh;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    z-index: 5;
+}
+
+@media only screen and (max-width : 1000px) 
+{
+    #main_content{
+        height: 50vh;
+        width: 25vw;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+#rules::after{
+    content: "";
+    position: absolute;
+    height: 60vh;
+    width: 25vw;    
+    background-image: url("https://media-public.canva.com/eIEGE/MAEoZveIEGE/1/tl.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    transform: rotate(180deg);
+    background-position: bottom;
+}
+
+
+#rules{
+    height: 60vh;
+    width: 25vw;
+    background-color: #FF914D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+    border-top-right-radius: 5vh;
+    z-index: 6;
+    position: absolute;
+    color: white;
+    visibility: hidden;
+}
+
+.rule_text{
+    font-size: 1.3rem;
+}
+ 
+#grid::before{
+    content: "";
+    position: absolute;
+    height: 90vh;
+    width: 94vw;
+    z-index: -1;
+    background-image: url("https://media-private.canva.com/BDTcE/MAED_jBDTcE/1/s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20230701%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230701T231456Z&X-Amz-Expires=49524&X-Amz-Signature=a99a26e3633b0669e9b8938a35baee57ff900cf8e21fb3522793c9ea349c9e91&X-Amz-SignedHeaders=host&response-expires=Sun%2C%2002%20Jul%202023%2013%3A00%3A20%20GMT");
+    background-size: cover;
+    opacity: .7;
+    }
+    
+    
+#grid{
+    height: 90vh;
+    width: 94vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+    flex-wrap: wrap;
+    }
+
+    #time{
+        width: 20vw;
+        height: 10vh;
+        background-color: #f64a0b;
+        color: white;
+        font-weight: bolder;
+        border: 1px solid #c54b02;
+        box-shadow:0px 5px 15px 5px #FF914D;
+        border-bottom-left-radius: 5vh;
+        margin-left: 74vw;
+        font-size: 5rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        }
+
+        #boxes{
+           height: 65vh;
+           width: 65vh;
+           background-color: #4f168e;
+           align-self: center;
+           display: grid;
+           grid-template-columns: 15vh 15vh 15vh 15vh;
+           grid-template-rows: 15vh 15vh 15vh 15vh;
+           row-gap: 1vh;
+           column-gap: 1vh;
+           padding-top: 1vh;
+           justify-content: center;
+        }
+         
+        .box{
+            background-image: url("https://media-public.canva.com/p4xtM/MAEqogp4xtM/1/tl.png");
+            background-size: cover;
+            background-color: #F64A0B;
+            border: 2px solid white;
+        }
+        
+       .box:hover{
+        cursor: pointer;
+       }
+        
+       #result::before{
+        content: "";
+        height: 50vh;
+        width: 25vw;
+        border-radius: 5vh;
+        position: absolute;
+        background-image: url("https://media-private.canva.com/I6keQ/MAE4UiI6keQ/1/s.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20230703%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230703T091914Z&X-Amz-Expires=18954&X-Amz-Signature=64a39a1ea4968ce782226309b79e23df1e50c3b01ca6ed25d167d837b5a4a333&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2003%20Jul%202023%2014%3A35%3A08%20GMT");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: .6;
+        z-index: -1;
+    }
+
+       #result{
+        height: 50vh;
+        width: 25vw;
+        background-color: white;
+        position: absolute;
+        align-self: center;
+        justify-self: center;
+        margin-top: 20vh;
+        border-radius: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 4rem;
+        font-weight: bolder;
+        background-color: #F64A0B;
+        color: white;
+        flex-direction: column;
+        visibility: hidden;
+        z-index: 1;
+       }

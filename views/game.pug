@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Game</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <section id="navbar">
+        <div id="navlogo" onmouseenter="navopen()"></div>
+        <nav id="nav" onmouseleave="navclose()">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Game" target="_blank">Game</a></li>
+                <li>Rule</li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="grid">
+        <div id="time">00:00:00</div>
+        <div id="boxes">
+            <div onclick="rotate_box(1,1)" id="box1" class="box"></div>
+            <div onclick="rotate_box(1,2)" id="box2" class="box"></div>
+            <div onclick="rotate_box(2,3)" id="box3" class="box"></div>
+            <div onclick="rotate_box(2,4)" id="box4" class="box"></div>
+            <div onclick="rotate_box(3,5)" id="box5" class="box"></div>
+            <div onclick="rotate_box(3,6)" id="box6" class="box"></div>
+            <div onclick="rotate_box(4,7)" id="box7" class="box"></div>
+            <div onclick="rotate_box(4,8)" id="box8" class="box"></div>
+            <div onclick="rotate_box(5,9)" id="box9" class="box"></div>
+            <div onclick="rotate_box(5,10)" id="box10" class="box"></div>
+            <div onclick="rotate_box(6,11)" id="box11" class="box"></div>
+            <div onclick="rotate_box(6,12)" id="box12" class="box"></div>
+            <div onclick="rotate_box(7,13)" id="box13" class="box"></div>
+            <div onclick="rotate_box(7,14)" id="box14" class="box"></div>
+            <div onclick="rotate_box(8,15)" id="box15" class="box"></div>
+            <div onclick="rotate_box(8,16)" id="box16" class="box"></div>
+        </div>
+
+        <div id="result"><p>You Win in</p> <p id = "timep"> 00:00:00</p></div>
+      
+    </section>
+
+    script
+     include ../static/index.js
+</body>
+
+</html>
