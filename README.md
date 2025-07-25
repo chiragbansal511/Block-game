@@ -35,7 +35,7 @@ memory-matching-game/
 
 ## Data Flow Model
 
-![Data Flow](architecture\image.png)
+![Data Flow](architecture/image.png)
 
 ### Data Flow Components
 
